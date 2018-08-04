@@ -2,7 +2,9 @@
 import java.util.Scanner;
 
 public class MultiDimensionalArray {
+
 	public static void main(String args[]) {
+
 		int i,j,dimensionA,dimensionB,search,flag=0;
 		
 		Scanner scanner=new Scanner(System.in);
@@ -21,6 +23,8 @@ public class MultiDimensionalArray {
 		System.out.println("Enter the element to be searched");
 		search=scanner.nextInt();  //Input element to be searched
 		
+		scanner.close();
+
 		for(i=0;i<dimensionA;i++)
 		{
 			for(j=0;j<dimensionB;j++)

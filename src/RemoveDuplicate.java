@@ -10,6 +10,8 @@ public class RemoveDuplicate {
 		System.out.println("Enter a string");
 		str=scanner.next().toCharArray(); //Store the string input in a character array
 		
+		scanner.close();
+
 		int len=str.length;
 		for(i=0;i<len;i++) {
 			char c=str[i];

@@ -2,7 +2,9 @@
 import java.util.*;
 
 public class SortPalindrome {
+
 	public static void main(String args[]) {
+
 		int i,j,position=0;
 		int[] location=new int[10];
 		String[] str=new String[10];
@@ -12,6 +14,8 @@ public class SortPalindrome {
 		for(i=0;i<10;i++)
 			str[i]=scanner.nextLine(); //Input 10 strings
 		
+		scanner.close();
+
 		for(i=0;i<10;i++)
 		{
 			StringBuffer strcopy =new StringBuffer(str[i]);

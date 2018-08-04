@@ -1,5 +1,5 @@
 //Determine if an integer is palindrome or not
-import java.util.*;
+import java.util.Scanner;
 
 class Palindrome
 {
@@ -9,6 +9,8 @@ class Palindrome
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter a number");
 		number=scanner.nextInt();
+
+		scanner.close();
 		
 		int copy=number;
 		while(number>0)  //Find reverse of the number
@@ -19,8 +21,8 @@ class Palindrome
 		}
 		
 		if(copy==rev)  //Display whether palindrome or not
-		System.out.println("true");
+			System.out.println("true");
 		else
-		System.out.println("false");
+			System.out.println("false");
 	}
 }

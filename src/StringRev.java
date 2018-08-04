@@ -1,5 +1,5 @@
 //Reverse the order of characters in each word
-import java.util.*;
+import java.util.Scanner;
 
 class StringRev
 {
@@ -7,8 +7,10 @@ class StringRev
 	{
 		int i;
 		Scanner scanner=new Scanner(System.in);
+
 		System.out.println("Enter a string");
 		String str=scanner.nextLine();
+		scanner.close();
 		
 		String[] strcopy=str.split(" "); //Separate the words in the sentence and store in a String array
 		int len=strcopy.length;

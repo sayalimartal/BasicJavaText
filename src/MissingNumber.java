@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class MissingNumber {
+
 	public static void main(String args[])
 	{
 		int i,j,k=0,len,swap=0,minimum;
@@ -10,10 +11,13 @@ public class MissingNumber {
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the length of the array");
 		len=scanner.nextInt();
+
 		System.out.println("Enter array elements");
 		for(i=0;i<len;i++)
 			array[i]=scanner.nextInt();
 		
+		scanner.close();
+
 		minimum=array[0];
 		for(i=0;i<len;i++) //Find the minimum value from the array elements
 		{

@@ -2,7 +2,9 @@
 import java.util.Scanner;
 
 public class ModifySentence {
+
 	public static void main(String args[]) {
+
 		int position,count=0,flag=0;	
 		String sentence=new String();
 		Scanner scanner=new Scanner(System.in);
@@ -18,6 +20,8 @@ public class ModifySentence {
 		System.out.println("Word position in the sentence:");
 		position=scanner.nextInt();
 		
+		scanner.close();
+
 		sentence=sentence.replaceAll("( )+"," ");  //Remove all extra spaces
 		int len = sentence.length();
 		StringBuffer sent=new StringBuffer(sentence);
